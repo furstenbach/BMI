@@ -7,11 +7,11 @@
     <script src="src/bmi_calculator.js"></script>
     <script src='https://code.jquery.com/jquery-2.1.4.js'></script>
   </head>
-  <body>
-      <h1>
+  <body style="background-color: tomato">
+      <h1 style="text-align: center">
   		    Min egen BMI-kalkylator
   		</h1>
-    <form>
+    <form style="text-align: center">
       <input type="text" id="weight" placeholder="Weight">
       <input type="text" id="height" placeholder="Height">
       <input type="button" id="calculate" value="Calculate">
@@ -21,12 +21,63 @@
       <span id="display_message"></span>
 
     </div>
+    <h3 style="text-align: left">Gränsvärden för BMI definierade av WHO</h3>
+    <p>
+      <ul>
+        <li>Undervikt	mindre än 18,5</li>
+        <li>Normalvikt	18,5–24,9</li>
+        <li>Övervikt	25,00–29,9</li>
+        <li>Fetma grad 1	30,0-34,9</li>
+        <li>Fetma grad 2	35,0-39,9</li>
+        <li>Fetma grad 3	mer än 40</li>
+      </ul>
+    </p>
+    <p>
+      För en person med en viss längd ökar BMI <em>linjärt</em> med ökande vikt.
+      Det finns i litteraturen olika statistiska gränsvärden för vad som skall
+      räknas som undervikt, normalvikt, övervikt och fetma. I tabellen visas de
+      allmänna gränsvärden som WHO anger, som gäller vuxna människor med normal
+      muskelmassa. Gränsvärdena för BMI ska ses som ett riktmärke för att mäta
+      hälsosam vikt. När det gäller barnfetma används ibland måttet isoBMI som
+      är korrigerat för att passa denna åldersgrupp.
+    </p>
+    <p>
+      Men BMI är inget klart facit; det är varken korrigerat för ålder, för
+      kvinnor under graviditet, eller stämmer överens för kroppsbyggare och
+      elitidrottare. Muskler – som till stor del består av vatten – har en högre
+      densitet än fett. Vanliga BMI-tabeller tar enbart hänsyn till längd och
+      vikt. Kvinnor har normalt något lägre muskelmassa än män, och bör således
+      räkna med lägre gränsvärden, särskilt vid värden upp mot övervikt. Omvänt
+      gäller också att BMI inte visar att en normalviktig person är otränad.
+    </p>
     <img src="/images/bmi1.jpeg" />
+    <p>
+      Ett mer noggrant instrument är att räkna ut andel kroppsfett i procent,
+      vilket fungerar även för vältränade personer med ett högre BMI, och
+      normalviktiga personer med mycket kroppsfett.
+    </p>
+    <p>
+      Undervikt för vuxna är enligt WHO ett BMI under 18,5. Normalvikt för vuxna
+      är inom referensintervallet 18,5 till 24,9. Med övervikt avses ett BMI
+      mellan 25 och 29,9. Fetma är ett BMI som överstiger 30.
+    </p>
+    <p>
+      BMI kritiseras av flera skäl, av vilka några nämns ovan. BMI anses av
+      vissa läger också vara missvisande för personer över 50 år, för vilka ett
+      BMI i undre normala referensintervallet hänger samman med ökad dödlighet,
+      medan lite övervikt inte är så farligt. Enligt samma teori, som kallas
+      överviktsparadoxen, kan ett BMI på 25 för en person som är 60 år vara den
+      mest ideala vikten, sett till överlevnad.[2] Den ideala vikten för äldre
+      tycks vara högre än för unga vuxna.[3]
+    </p>
+
     <h3>
         Kritik mot BMI som mått
     </h3>
-    <a href "http://www.npr.org/templates/story/story.php?storyId=106268439">Varför BMI inte är ett mått på hälsa</a>
-    <a href "http://nyheter24.se/nyheter/forskning/804068-har-ar-anledningen-till-att-bmi-suger-som-matt">Samma BMI, olika form</a>
+    <ul>
+      <li><a href "http://www.npr.org/templates/story/story.php?storyId=106268439">Varför BMI inte är ett mått på hälsa</a></li>
+      <li><a href "http://nyheter24.se/nyheter/forskning/804068-har-ar-anledningen-till-att-bmi-suger-som-matt">Samma BMI, olika form</a></li>
+    </ul>
   </body>
 </html>
 <script type="text/javascript">
